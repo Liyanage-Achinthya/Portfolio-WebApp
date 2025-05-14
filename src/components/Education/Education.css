@@ -1,0 +1,130 @@
+.edu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  margin: 80px 0 0 0;
+  background: linear-gradient(
+    135deg,
+    rgba(0, 128, 128, 0.1),
+    rgba(0, 128, 128, 0.15)
+  );
+  padding: 50px 170px;
+}
+
+.edu-title {
+  position: relative;
+}
+
+.edu-title h1 {
+  padding: 0px 30px;
+  font-size: 80px;
+  font-weight: 600;
+  color: rgb(0, 128, 128);
+  text-align: center;
+}
+
+.edu-sections {
+  display: flex;
+  gap: 80px;
+  align-items: center;
+}
+
+.edu-item {
+  display: flex;
+  gap: 80px;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.edu-item:hover {
+  transform: scale(1.03);
+}
+
+.edu-left {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+}
+
+.edu-left img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.edu-right {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.edu-para {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 20px;
+  font-weight: 500;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.edu-para h1 {
+  transition: color 0.3s ease;
+}
+
+.edu-para h3 {
+  font-size: 22px;
+}
+
+.edu-para p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.edu-para a {
+  color: white;
+  text-decoration: none;
+  font-size: 30px;
+  transition: color 0.3s ease;
+}
+
+.edu-para:hover h1,
+.edu-para:hover a {
+  color: rgb(0, 128, 128);
+}
+
+/* Remove individual zooms to let .edu-item handle it */
+.edu-left img:hover,
+.edu-para:hover {
+  transform: none;
+}
+
+@media (max-width: 768px) {
+  .edu {
+    align-items: center;
+    gap: 60px;
+    margin: 0;
+  }
+
+  .edu-title h1 {
+    font-size: 50px;
+    padding: 0;
+  }
+
+  .edu-sections {
+    flex-direction: column;
+  }
+
+  .edu-left {
+    display: none;
+  }
+
+  .edu-para {
+    font-size: 18px;
+    line-height: 32px;
+  }
+}
