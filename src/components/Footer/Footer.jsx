@@ -11,14 +11,14 @@ const Footer = () => {
           <img src={logo} alt="logo" />
         </div>
         <div className="footer-top-right">
-          <a href="mailto:liyanageachinthya@gamil.com">
+          <a href="mailto:liyanageachinthya@gmail.com">
             liyanageachinthya@gmail.com
           </a>
         </div>
       </div>
       <hr />
       <div className="footer-bottom">
-        <p className="footer-bottom-left">&copy; All rights reseverd.</p>
+        <p className="footer-bottom-left">&copy; All rights reserved.</p>
         <div className="footer-bottom-right">
           <p>Designed & Developed by</p>
           <h2>Achinthya Liyanage</h2>

@@ -62,14 +62,15 @@ const Contact = () => {
 
   return (
     <section id="contact" className="contact">
-      <div className="contact-title">
+      <div className="contact-title" data-aos="fade-up">
         <h1>Get in Touch</h1>
       </div>
+
       <div className="contact-section">
-        <div className="contact-left">
+        <div className="contact-left" data-aos="fade-right">
           <div className="tech-stack">
             <h1>Tech Stack</h1>
-            <div className="tech-icons">
+            <div className="tech-icons" data-aos="zoom-in">
               {techStack.map((tech, index) => (
                 <img
                   key={index}
@@ -82,8 +83,8 @@ const Contact = () => {
             </div>
           </div>
 
-          <h1>Connect</h1>
-          <div className="contact-details">
+          <h1 data-aos="fade-right">Connect</h1>
+          <div className="contact-details" data-aos="fade-up">
             <div className="contact-detail">
               <a href="mailto:liyanageachinthya@gamil.com">
                 <i className="bx bxl-gmail"></i>
@@ -112,7 +113,12 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <form onSubmit={onSubmit} className="contact-right">
+
+        <form
+          onSubmit={onSubmit}
+          className="contact-right"
+          data-aos="fade-left"
+        >
           <label htmlFor="name">Name</label>
           <input
             type="text"

@@ -13,7 +13,6 @@ const Navbar = () => {
     setMenuOpen((prev) => !prev);
   };
 
-  // ScrollSpy: Update active link based on scroll position
   useEffect(() => {
     const sections = document.querySelectorAll("section[id]");
 
@@ -27,6 +26,7 @@ const Navbar = () => {
       },
       {
         threshold: 0.6,
+        rootMargin: "0px 0px -20% 0px",
       }
     );
 
@@ -39,7 +39,7 @@ const Navbar = () => {
 
   return (
     <div className="navbar">
-      <div className="nav-logo">
+      <div className="nav-logo" data-aos="fade-right">
         <img src={logo} alt="logo" />
       </div>
 
@@ -52,7 +52,11 @@ const Navbar = () => {
         />
       )}
 
-      <ul ref={menuRef} className={`nav-menu ${menuOpen ? "show" : ""}`}>
+      <ul
+        ref={menuRef}
+        className={`nav-menu ${menuOpen ? "show" : ""}`}
+        data-aos="zoom-in"
+      >
         <img
           src={menu_close}
           onClick={toggleMenu}
@@ -97,7 +101,7 @@ const Navbar = () => {
         </li>
       </ul>
 
-      <div className="nav-connect">
+      <div className="nav-connect" data-aos="fade-left">
         <a href="/cv.pdf" download>
           Download CV
         </a>

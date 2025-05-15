@@ -6,9 +6,10 @@ import ReadMore from "../../assets/arrow_icon.svg"; // Arrow icon for "Read More
 const Projects = () => {
   return (
     <section id="projects" className="projects">
-      <div className="prj-title">
+      <div className="prj-title" data-aos="fade-up">
         <h1>Projects</h1>
       </div>
+
       <div className="prj-container">
         {Project_Data.map((project, index) => (
           <a
@@ -17,6 +18,8 @@ const Projects = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="prj-link-wrapper"
+            data-aos="zoom-in-up"
+            data-aos-delay={index * 100} // Stagger animation
           >
             <div className="prj-format">
               <h2>{project.title}</h2>

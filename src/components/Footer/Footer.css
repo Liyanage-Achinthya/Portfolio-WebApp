@@ -1,8 +1,10 @@
 .footer {
-  margin: 30px 170px;
   display: flex;
   flex-direction: column;
   gap: 10px;
+  background-color: #0d1b2a;
+  margin: 0;
+  padding: 30px 170px;
 }
 
 .footer-top {
@@ -27,7 +29,6 @@
   display: flex;
   justify-content: space-between;
   font-size: 18px;
-  margin-bottom: 20px;
 }
 
 .footer-bottom-left {
@@ -60,7 +61,7 @@ hr {
 
 @media (max-width: 768px) {
   .footer {
-    margin: 50px 40px;
+    margin: 0;
   }
 
   .footer-top {

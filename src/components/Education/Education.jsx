@@ -6,34 +6,11 @@ import UOM from "../../assets/UOM.png"; // University image
 const Education = () => {
   return (
     <section id="edu" className="edu">
-      <div className="edu-title">
+      <div className="edu-title" data-aos="fade-up">
         <h1>Education</h1>
       </div>
 
-      <div className="edu-sections">
-        <div className="edu-item">
-          <div className="edu-left">
-            <img src={SACK} alt="St. Anthony's College Kandy" />
-          </div>
-
-          <div className="edu-right">
-            <div className="edu-para">
-              <h1>St. Anthony's College Kandy (2009 - 2022)</h1>
-              <h3>• G.C.E Advanced Level Examination – 2022</h3>
-              <h3>• G.C.E Ordinary Level Examination – 2019</h3>
-              <p>
-                Completed 13 years of education at St. Anthony’s College,
-                building a strong academic foundation. Successfully passed the
-                G.C.E. Ordinary Level (2019). Traced Mathematics stream for
-                G.C.E. Advanced Level (2022), focusing on Combined Mathematics,
-                Physics, and Chemistry, and successfully passed the examination.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="edu-sections">
+      <div className="edu-sections" data-aos="fade-right" data-aos-delay="100">
         <div className="edu-item">
           <div className="edu-left">
             <img src={UOM} alt="University of Moratuwa" />
@@ -53,6 +30,29 @@ const Education = () => {
               <a href="mailto:e2245546@bit.uom.lk">
                 <i className="bx bxl-gmail"></i>
               </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="edu-sections" data-aos="fade-left" data-aos-delay="200">
+        <div className="edu-item">
+          <div className="edu-left">
+            <img src={SACK} alt="St. Anthony's College Kandy" />
+          </div>
+
+          <div className="edu-right">
+            <div className="edu-para">
+              <h1>St. Anthony's College Kandy (2009 - 2022)</h1>
+              <h3>• G.C.E Advanced Level Examination – 2022</h3>
+              <h3>• G.C.E Ordinary Level Examination – 2019</h3>
+              <p>
+                Completed 13 years of education at St. Anthony’s College,
+                building a strong academic foundation. Successfully passed the
+                G.C.E. Ordinary Level (2019). Traced Mathematics stream for
+                G.C.E. Advanced Level (2022), focusing on Combined Mathematics,
+                Physics, and Chemistry, and successfully passed the examination.
+              </p>
             </div>
           </div>
         </div>

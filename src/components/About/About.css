@@ -3,7 +3,10 @@
   align-items: center;
   flex-direction: column;
   gap: 35px;
+  margin: 0;
   color: white;
+  padding: 20px 170px;
+  background: linear-gradient(135deg, #1f242d 60%, rgba(0, 128, 128, 0.3) 100%);
 }
 
 .about img {
@@ -61,15 +64,14 @@
 }
 
 .about-action a {
-  color: rgb(0, 128, 128);
   text-decoration: none;
 }
 
 .about-CV {
   padding: 10px 20px;
   border-radius: 50px;
-  border: 2px solid rgb(0, 128, 128);
-  color: rgb(0, 128, 128);
+  border: 2px solid white;
+  color: white;
   cursor: pointer;
   text-align: center;
   margin-top: -20px;
@@ -83,8 +85,8 @@
 
 .about-CV:hover {
   transform: scale(1.05);
-  border-color: white;
-  color: white;
+  border-color: rgb(0, 128, 128);
+  color: rgb(0, 128, 128);
 }
 
 @media (max-width: 768px) {
