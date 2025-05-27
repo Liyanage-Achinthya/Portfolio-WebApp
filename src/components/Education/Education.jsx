@@ -1,7 +1,8 @@
 import React from "react";
 import "./Education.css";
-import SACK from "../../assets/SACK.png"; // School image
-import UOM from "../../assets/UOM.png"; // University image
+import SACK from "../../assets/SACK.png";
+import UOM from "../../assets/UOM.png";
+import ReadMoreArrow from "../../assets/arrow_icon.svg";
 
 const Education = () => {
   return (
@@ -29,6 +30,24 @@ const Education = () => {
               </p>
               <a href="mailto:e2245546@bit.uom.lk">
                 <i className="bx bxl-gmail"></i>
+              </a>
+              <h3>• Trainee – Full Stack Developer</h3>
+              <p>
+                Enrolled in the Trainee Full Stack Developer program offered by
+                the University of Moratuwa through Open Learning Platform,
+                focusing on building practical skills in both frontend and
+                backend web development.
+              </p>
+              <a
+                href="https://drive.google.com/drive/folders/1IbJbA1Gz-KlLyqjLgd8onv30T3A9n3V0"
+                className="edu-certificate-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div className="edu-readmore">
+                  <p>Certificates of Completion</p>
+                  <img src={ReadMoreArrow} alt="Arrow icon" />
+                </div>
               </a>
             </div>
           </div>

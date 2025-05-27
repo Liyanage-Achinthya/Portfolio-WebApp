@@ -1,3 +1,7 @@
+section {
+  scroll-margin-top: 50px;
+}
+
 .navbar {
   position: sticky;
   top: 0;
@@ -8,10 +12,8 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 50px;
-  opacity: 1; /* Removed fade-in effect */
 }
 
-/* Deleted animation */
 .nav-logo img {
   width: 100px;
   height: auto;
@@ -31,11 +33,7 @@
   background-color: rgb(0, 128, 128);
   font-size: 20px;
   cursor: pointer;
-  transition: transform 0.3s;
-}
-
-.nav-connect:hover {
-  transform: scale(1.05);
+  transition: 0.5s;
 }
 
 .nav-menu li {
@@ -49,10 +47,6 @@
   text-decoration: none;
   color: white;
   transition: 0.3s;
-}
-
-.nav-menu a:hover {
-  color: rgb(0, 128, 128);
 }
 
 .nav-menu a.active {
@@ -72,7 +66,14 @@
   display: none;
 }
 
-/* MOBILE STYLES */
+.nav-connect:hover {
+  transform: scale(1.05);
+}
+
+.nav-menu a:hover {
+  color: rgb(0, 128, 128);
+}
+
 @media (max-width: 768px) {
   .navbar {
     padding: 0 20px;
@@ -123,11 +124,11 @@
     gap: 10px;
   }
 
-  .nav-menu a:hover {
-    color: rgb(0, 128, 128);
-  }
-
   .nav-menu a.active {
     border-bottom: 2px solid rgb(0, 128, 128);
+  }
+
+  .nav-menu a:hover {
+    color: rgb(0, 128, 128);
   }
 }

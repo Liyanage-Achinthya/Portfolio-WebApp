@@ -4,6 +4,13 @@ import logo from "../../assets/logo.svg";
 import menu_open from "../../assets/menu_open.svg";
 import menu_close from "../../assets/menu_close.svg";
 
+const sections = [
+  { id: "about", label: "About" },
+  { id: "edu", label: "Education" },
+  { id: "projects", label: "Projects" },
+  { id: "contact", label: "Contact" },
+];
+
 const Navbar = () => {
   const [activeSection, setActiveSection] = useState("about");
   const [menuOpen, setMenuOpen] = useState(false);
@@ -14,8 +21,6 @@ const Navbar = () => {
   };
 
   useEffect(() => {
-    const sections = document.querySelectorAll("section[id]");
-
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -25,21 +30,22 @@ const Navbar = () => {
         });
       },
       {
-        threshold: 0.6,
-        rootMargin: "0px 0px -20% 0px",
+        threshold: 0,
+        rootMargin: "-50% 0px -50% 0px",
       }
     );
 
-    sections.forEach((section) => observer.observe(section));
+    const sectionElements = document.querySelectorAll("section[id]");
+    sectionElements.forEach((section) => observer.observe(section));
 
     return () => {
-      sections.forEach((section) => observer.unobserve(section));
+      sectionElements.forEach((section) => observer.unobserve(section));
     };
   }, []);
 
   return (
     <div className="navbar">
-      <div className="nav-logo" data-aos="fade-right">
+      <div className="nav-logo">
         <img src={logo} alt="logo" />
       </div>
 
@@ -52,57 +58,29 @@ const Navbar = () => {
         />
       )}
 
-      <ul
-        ref={menuRef}
-        className={`nav-menu ${menuOpen ? "show" : ""}`}
-        data-aos="zoom-in"
-      >
+      <ul ref={menuRef} className={`nav-menu ${menuOpen ? "show" : ""}`}>
         <img
           src={menu_close}
           onClick={toggleMenu}
           alt="menu close"
           className="nav-mob-close"
         />
-        <li>
-          <a
-            href="#about"
-            className={activeSection === "about" ? "active" : ""}
-            onClick={toggleMenu}
-          >
-            About
-          </a>
-        </li>
-        <li>
-          <a
-            href="#edu"
-            className={activeSection === "edu" ? "active" : ""}
-            onClick={toggleMenu}
-          >
-            Education
-          </a>
-        </li>
-        <li>
-          <a
-            href="#projects"
-            className={activeSection === "projects" ? "active" : ""}
-            onClick={toggleMenu}
-          >
-            Projects
-          </a>
-        </li>
-        <li>
-          <a
-            href="#contact"
-            className={activeSection === "contact" ? "active" : ""}
-            onClick={toggleMenu}
-          >
-            Contact
-          </a>
-        </li>
+
+        {sections.map(({ id, label }) => (
+          <li key={id}>
+            <a
+              href={`#${id}`}
+              className={activeSection === id ? "active" : ""}
+              onClick={toggleMenu}
+            >
+              {label}
+            </a>
+          </li>
+        ))}
       </ul>
 
-      <div className="nav-connect" data-aos="fade-left">
-        <a href="/cv.pdf" download>
+      <div className="nav-connect">
+        <a href="/CV.pdf" download>
           Download CV
         </a>
       </div>

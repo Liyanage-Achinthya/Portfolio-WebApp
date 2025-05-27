@@ -92,15 +92,49 @@
   transition: color 0.3s ease;
 }
 
+.edu-certificate-link {
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+  transition: color 0.3s ease;
+}
+
+.edu-readmore {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  transition: gap 0.3s ease, color 0.3s ease;
+}
+
+.edu-readmore img {
+  width: 16px;
+  height: auto;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  filter: brightness(0) saturate(100%) invert(100%);
+}
+
 .edu-para:hover h1,
 .edu-para:hover a {
   color: rgb(0, 128, 128);
 }
 
-/* Remove individual zooms to let .edu-item handle it */
 .edu-left img:hover,
 .edu-para:hover {
   transform: none;
+}
+
+.edu-para:hover .edu-readmore {
+  color: rgb(0, 128, 128);
+  gap: 18px;
+}
+
+.edu-para:hover .edu-readmore img {
+  filter: brightness(0) saturate(100%) invert(36%) sepia(90%) saturate(303%)
+    hue-rotate(134deg) brightness(97%) contrast(88%);
+  transform: translateX(4px);
 }
 
 @media (max-width: 768px) {

@@ -10,7 +10,7 @@ const About = () => {
         <span>Relentless Developer, </span>Building Possibilities.
       </h1>
       <p data-aos="fade-up" data-aos-delay="200">
-        IT Undergraduate
+        Achinthya Liyanage
       </p>
 
       <div className="about-icon" data-aos="fade-up" data-aos-delay="300">
@@ -34,7 +34,7 @@ const About = () => {
       </div>
 
       <div className="about-action">
-        <a href="/cv.pdf" target="_blank" rel="noopener noreferrer">
+        <a href="/CV.pdf" target="_blank" rel="noopener noreferrer">
           <div className="about-CV">View CV</div>
         </a>
       </div>

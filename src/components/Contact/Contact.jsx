@@ -18,22 +18,22 @@ import python from "../../assets/Tech/python.svg";
 import react from "../../assets/Tech/react.svg";
 
 const techStack = [
-  { name: "C#", icon: csharp },
-  { name: "CSS3", icon: css },
-  { name: ".NET", icon: dotnet },
-  { name: "Figma", icon: figma },
-  { name: "Git", icon: git },
   { name: "HTML5", icon: html },
-  { name: "Java", icon: java },
+  { name: "CSS3", icon: css },
   { name: "JavaScript", icon: javascript },
-  { name: "Jira", icon: jira },
-  { name: "MariaDB", icon: mariadb },
-  { name: "SQL Server", icon: sqlserver },
-  { name: "MySQL", icon: mysql },
-  { name: "Node.js", icon: node },
-  { name: "PHP", icon: php },
-  { name: "Python", icon: python },
   { name: "React", icon: react },
+  { name: "PHP", icon: php },
+  { name: "Node.js", icon: node },
+  { name: "Figma", icon: figma },
+  { name: "C#", icon: csharp },
+  { name: "SQL Server", icon: sqlserver },
+  { name: ".NET", icon: dotnet },
+  { name: "Java", icon: java },
+  { name: "Python", icon: python },
+  { name: "MySQL", icon: mysql },
+  { name: "MariaDB", icon: mariadb },
+  { name: "Git", icon: git },
+  { name: "Jira", icon: jira },
 ];
 
 const Contact = () => {

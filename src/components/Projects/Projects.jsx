@@ -1,7 +1,7 @@
 import React from "react";
 import "./Projects.css";
 import Project_Data from "../../assets/Project_Data.js";
-import ReadMore from "../../assets/arrow_icon.svg"; // Arrow icon for "Read More"
+import ReadMore from "../../assets/arrow_icon.svg";
 
 const Projects = () => {
   return (
@@ -19,7 +19,7 @@ const Projects = () => {
             rel="noopener noreferrer"
             className="prj-link-wrapper"
             data-aos="zoom-in-up"
-            data-aos-delay={index * 100} // Stagger animation
+            data-aos-delay={index * 100}
           >
             <div className="prj-format">
               <h2>{project.title}</h2>
