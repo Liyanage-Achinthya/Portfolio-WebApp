@@ -1,12 +1,50 @@
-# React + Vite
+# 🌐 Liyanage Achinthya - Portfolio WebApp
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the source code of my portfolio website! This site showcases my skills, projects, education, and provides contact details in a simple, responsive, and modern web format.
 
-Currently, two official plugins are available:
+## 🛠️ Built With
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Frontend:** React.js
+- **Styling:** CSS (custom)
+- **Icons:** Boxicons
+- **Form Handling:** Web3Forms API
 
-## Expanding the ESLint configuration
+## 📁 Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```text
+Portfolio-WebApp/
+├── public/
+├── src/
+│   ├── assets/              # Images, icons, and project data
+│   ├── components/
+│   │   ├── About/
+│   │   ├── Education/
+│   │   ├── Projects/
+│   │   ├── Contact/
+│   │   ├── Navbar/
+│   │   └── Footer/
+│   ├── App.jsx              # Main component
+│   └── index.html           # Entry point
+├── README.md
+└── package.json
+```
+
+
+## 🚀 Features
+
+- ✅ **About Section** – Quick intro and social media links  
+- ✅ **Education Section** – Academic background
+- ✅ **Projects Section** – List of past projects
+- ✅ **Contact Section** – Functional contact form using Web3Forms  
+- ✅ **Responsive Design** – Clean layout optimized for both desktop and mobile 
+
+### 🌟 Connect With Me
+
+- **Email:** liyanageachinthya@gamil.com
+- **GitHub:** [Liyanage-Achinthya](https://github.com/Liyanage-Achinthya)
+- **LinkedIn:** [liyanage-achinthya](https://www.linkedin.com/in/liyanage-achinthya)
+  
+---
+
+
+
