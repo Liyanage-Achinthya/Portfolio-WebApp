@@ -36,13 +36,21 @@ Portfolio-WebApp/
 - ✅ **Education Section** – Academic background
 - ✅ **Projects Section** – List of past projects
 - ✅ **Contact Section** – Functional contact form using Web3Forms  
-- ✅ **Responsive Design** – Clean layout optimized for both desktop and mobile 
+- ✅ **Responsive Design** – Clean layout optimized for both desktop and mobile
 
-### 🌟 Connect With Me
+## 🌐 Deployment
+
+Firebase: https://itsmeachinthya.web.app/
+
+## 🌟 Connect With Me
 
 - **Email:** liyanageachinthya@gamil.com
 - **GitHub:** [Liyanage-Achinthya](https://github.com/Liyanage-Achinthya)
 - **LinkedIn:** [liyanage-achinthya](https://www.linkedin.com/in/liyanage-achinthya)
+
+## 👨‍💻 Author
+
+@Liyanage-Achinthya
   
 ---
 
